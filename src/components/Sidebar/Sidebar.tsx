@@ -2,7 +2,6 @@
 
 import { FC, useCallback } from "react";
 import { Button } from "@heroui/react";
-import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { ThemeSwitch } from "@/components";
 import { useRouter, usePathname } from "next/navigation";
