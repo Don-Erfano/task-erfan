@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { UsersService } from "./users.service";
-import { UsersResponse } from "./interface";
+import { User, UsersResponse } from "./interface";
 
 const usersService = new UsersService();
 
@@ -21,8 +21,11 @@ export const useUsers = () =>
  * get user by id
  */
 export const useUserById = (id: number) =>
-  useQuery({
+  useQuery<User>({
     queryKey: ["useUserById", id],
-    queryFn: async () => await usersService.getUserById(id),
+    queryFn: async () => {
+      const response = await usersService.getUserById(id);
+      return response.data;
+    },
     enabled: !!id,
   });

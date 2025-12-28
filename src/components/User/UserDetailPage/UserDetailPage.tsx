@@ -12,7 +12,7 @@ const UserDetailPage: FC = () => {
   const params = useParams();
 
   const userId = Number(params?.id);
-  const { data, isLoading, isError } = useUserById(userId);
+  const { data: user, isLoading, isError } = useUserById(userId);
 
   if (isLoading) {
     return (
@@ -22,15 +22,13 @@ const UserDetailPage: FC = () => {
     );
   }
 
-  if (isError || !data) {
+  if (isError || !user) {
     return (
       <div className="w-full min-h-screen flex items-center justify-center m-auto sm:p-4 text-sm text-red-500/60">
         Error Fetch Data
       </div>
     );
   }
-
-  const user = "data" in data ? data.data : data;
 
   return (
     <div className="p-2 sm:mb-0 mb-16 max-w-3xl mx-auto">
