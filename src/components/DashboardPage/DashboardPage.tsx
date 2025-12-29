@@ -4,7 +4,7 @@ import { FC, useMemo } from "react";
 import { UserItem, UserTable } from "@/components";
 import { useRouter } from "next/navigation";
 
-import { useUsers } from "@/services/apis/users";
+import { useUsers } from "@/hooks";
 import { Spinner } from "@heroui/react";
 
 const DashboardPage: FC = () => {

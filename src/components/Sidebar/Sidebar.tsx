@@ -5,7 +5,7 @@ import { Button } from "@heroui/react";
 import { Icon } from "@iconify/react";
 import { ThemeSwitch } from "@/components";
 import { useRouter, usePathname } from "next/navigation";
-import { addLog } from "@/helper/logger";
+import { addLog } from "@/common/logger";
 
 const Sidebar: FC = () => {
   const router = useRouter();

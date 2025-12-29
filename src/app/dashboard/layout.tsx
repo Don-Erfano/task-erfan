@@ -3,7 +3,7 @@
 import { PropsWithChildren, useEffect } from "react";
 import { FooterNav, Sidebar, ThemeSwitch } from "@/components";
 import { usePathname } from "next/navigation";
-import { addLog } from "@/helper/logger";
+import { addLog } from "@/common/logger";
 
 const Layout = ({ children }: Readonly<PropsWithChildren>) => {
   const pathname = usePathname();

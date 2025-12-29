@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { UsersService } from "./users.service";
-import { User, UsersResponse } from "./interface";
+import { UsersService, User, UsersResponse } from "@/services";
 
 const usersService = new UsersService();
 

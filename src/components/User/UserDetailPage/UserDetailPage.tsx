@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { Button, Card, CardBody, Divider, Spinner } from "@heroui/react";
 
 import { UserInfo } from "@/components/User";
-import { useUserById } from "@/services/apis/users";
+import { useUserById } from "@/hooks";
 
 const UserDetailPage: FC = () => {
   const router = useRouter();

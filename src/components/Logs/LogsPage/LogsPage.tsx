@@ -2,7 +2,7 @@
 
 import { FC, useState } from "react";
 import { LogsTable } from "@/components";
-import { getLogs } from "@/helper/logger";
+import { getLogs } from "@/common/logger";
 import { LogItem } from "./interface";
 
 const LogsPage: FC = () => {

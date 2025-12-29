@@ -1,6 +1,5 @@
 import { AxiosResponse } from "axios";
-import { AbstractAPI, INetworkResponse } from "@/services/interceptor";
-import { User, UsersResponse } from "./interface";
+import { AbstractAPI, INetworkResponse, User, UsersResponse } from "@/services";
 
 export class UsersService extends AbstractAPI {
   constructor() {

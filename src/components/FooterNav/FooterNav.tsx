@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Icon } from "@iconify/react";
 import { Button } from "@heroui/react";
-import { addLog } from "@/helper/logger";
+import { addLog } from "@/common/logger";
 
 const FooterNav: FC = () => {
   const pathname = usePathname();

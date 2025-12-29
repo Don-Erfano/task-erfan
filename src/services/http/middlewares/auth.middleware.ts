@@ -5,7 +5,7 @@ import axios, {
 } from "axios";
 import { IMiddleware } from "./interface";
 import nookies from "nookies";
-import { INetworkResponse } from "@/services/interceptor";
+import { INetworkResponse } from "@/services";
 
 export default class AuthMiddleware implements IMiddleware {
   private isRefreshing = false;
