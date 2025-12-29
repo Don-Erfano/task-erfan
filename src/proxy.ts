@@ -3,7 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 const AUTH_ROUTES = ["/auth/login", "/auth/register"];
 const DASHBOARD_PREFIX = "/dashboard";
 const HOME_ROUTE = "/";
-export function middleware(request: NextRequest) {
+
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const authCookie = request.cookies.get("auth");
