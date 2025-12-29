@@ -1,6 +1,6 @@
 import { AxiosError, AxiosRequestConfig } from "axios";
-import { IMiddleware } from "@/services/interceptor/http/middlewares/interface";
-import { INetworkResponse } from "@/services/interceptor";
+import { IMiddleware } from "@/services/http/middlewares/interface";
+import { INetworkResponse } from "@/services";
 
 export default class ErrorMiddleware implements IMiddleware {
   async onResponseError(

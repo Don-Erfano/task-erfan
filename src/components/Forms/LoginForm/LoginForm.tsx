@@ -9,7 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { LoginFormValues } from "./interface";
 import { loginSchema } from "./schema";
-import { addLog } from "@/helper/logger";
+import { addLog } from "@/common/logger";
 
 const LoginForm: FC = () => {
   const router = useRouter();
